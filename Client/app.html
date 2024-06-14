@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangalore House Price Prediction</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="container">
+  <h1>Bangalore House Price Prediction</h1>
+  <form class="form">
+    <div class="input-group">
+      <label for="bhk">Number of BHK:</label>
+      <input type="number" id="uiBHK" class="color-filled-box" placeholder="Enter BHK" min="0">
+    </div>
+    <div class="input-group">
+      <label for="bath">Number of Bathrooms:</label>
+      <input type="number" id="uiBathrooms" class="color-filled-box" placeholder="Enter Bath" min="0">
+    </div>
+    <div class="input-group">
+      <label for="area">Area (in square feet):</label>
+      <input type="number" id="uiSqft" class="color-filled-box" placeholder="Enter Area" min="0">
+    </div>
+    <div class="input-group">
+      <label for="location">Location:</label>
+      <select id="uiLocations" class="color-filled-box"></select>
+    </div>
+    <button class="submit" onclick="estimatePrice()" type="button">Estimate Price</button>
+  </form>
+  <div id="uiEstimatedPrice" class="result"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
